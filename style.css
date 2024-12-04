@@ -1,0 +1,100 @@
+
+    body{
+        background-position: top;
+        background-repeat: repeat-x;
+        background-size: 75%;
+        background-color: rgb(23, 21, 21);
+
+        }
+        
+            h1{ 
+                padding: inherit;
+        border-style: double;
+        border-color: #ffffff;
+        border-width: thick;
+        border-radius: 20px;
+                font-size: 3rem;
+                background: linear-gradient(to right, #2e0032,#750048, #ffffff); /* تدرج الألوان */
+                -webkit-background-clip: text; /* دعم المتصفحات التي تدعم -webkit */
+                background-clip: text;
+                color: transparent; /* النص سيكون شفافًا لظهور التدرج */
+                animation: gradientText 4s infinite; /* إضافة الأنيميشن */
+                background-size: 200%; /* تكبير التدرج لزيادة الحركة */
+                text-align: center;
+                padding-top: 10px;
+                outline-style: dashed;/*5at mota9ati3*/
+                outline-width: medium;
+                outline-color: #750048;
+               /* outline: 5px solid red;3 3asafir b7ajar*/
+                outline-offset: 5px;/*lmasafa bin border whad chkil*/
+        
+            }
+            
+            @keyframes gradientText {
+                0% {
+                    background-position: 0%;
+                }
+                100% {
+                    background-position: 100%;
+                }
+            }
+        
+            #logo {
+                height: 20px;
+                font-size: 100px;
+                color: #ffcc00;
+                text-shadow: 3px 3px 5px #000;
+                animation: spin 5s linear infinite;
+            }
+            
+            @keyframes spin {
+                from {
+                    transform: rotate(0deg);
+                }
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+           
+            #name {
+                padding:50px;
+                font-size: 50px;
+                color: #fffdf5;
+                text-shadow: 3px 3px 5px #000;
+                animation: spin 4s linear infinite;
+            }
+            
+            @keyframes spin {
+                from {
+                    transform: rotate(360deg);
+                }
+                to {
+                    transform: rotate(0deg);
+                }
+            }
+        /*block لجعل العنصر يظهر على كامل السطر (إن لم تتلاعب بحجمه) و لا يظهر أي شيء آخر بجانبه.
+        inline-block لجعل العنصر يظهر كبلوك و لا مانع أن يظهر عنصر آخر بجانبه إن كان هناك متسع له.
+        inline لجعل العنصر يظهر بنفس حجم محتواه و هذا الأسلوب في العرض يستخدم بشكل خاص عندما تحتاج إلى تعديل تصميم نص موجود في فقرة أو عنوان*/
+            img {
+                display: block;
+                width: 200px;
+                height: 200px;
+                border: 3px solid gray;
+                border-radius: 100%;
+                margin-left: 40%;
+            }
+        
+            footer{
+                text-align: center;
+                padding: 10px;
+                color: #ffffff;
+                width: 100%;;
+                font-size: 30px;
+                bottom: 50px;
+                
+            ;
+            }
+        
+        
+          
+              
